@@ -1,0 +1,126 @@
+
+*{
+    margin: 0
+}
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.poppins-font {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+main{
+    
+    margin: 0 auto;
+}
+
+section{
+    margin-top: 130px;
+}
+
+/*SHARED RESOURCES*/
+.display-flex{
+    display: flex;
+}
+
+.section-description{
+    margin: 1.8rem;
+    font-size: 18px;
+}
+
+.btn-styles{
+    padding: 16px 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgba(255, 89, 89, 1) ;
+    color: white;
+    font-weight: 700;
+}
+
+.section-heading{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+
+
+
+
+/*HEADER SECTION*/
+header{
+   background-image: url(../images/banner.png);
+   padding: 170px;
+   text-align: center;
+   color: white;  
+   
+}
+
+header h1{
+    font-size: 3rem ;
+    font-weight: bold;
+}
+
+/*DONATION SECTION*/
+
+.donate{
+    text-align: center;   
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+   
+}
+.donation-amount{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.donation-amount h3{
+     margin-right: 20px;
+     font-weight: bold;
+     font-size: 1.7rem;
+     padding: 20px 24px;
+     border-radius: 7px;
+     background-color: rgb(240, 240, 240);
+
+}
+
+.highlight-amount{
+    background-color: rgba(255, 89, 89, 1);
+    border: 5px solid black;
+}
+
+
+/*RESPONSIVE*/
+@media screen and (max-width: 576px) {
+
+    header{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 30px;
+        
+    }
+
+    header img{
+        height: 700px;
+       
+    }
+    .section-description{
+        font-size: 1rem;
+        padding: 0 1rem;
+
+        
+    }
+    
+}
