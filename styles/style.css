@@ -46,6 +46,8 @@ section{
     background-color: rgba(255, 89, 89, 1) ;
     color: white;
     font-weight: 700;
+    width: auto;
+    cursor: pointer;
 }
 
 .section-heading{
@@ -74,12 +76,10 @@ header h1{
 
 /*DONATION SECTION*/
 
-.donate{
-    text-align: center;   
-    justify-content: center;
+.donate{  
+    flex-direction: column;
     align-items: center;
-    margin-left: auto;
-   
+    text-align: center;
 }
 .donation-amount{
     justify-content: center;
@@ -95,13 +95,44 @@ header h1{
      padding: 20px 24px;
      border-radius: 7px;
      background-color: rgb(240, 240, 240);
+     margin-bottom: 80px;
 
 }
 
-.highlight-amount{
-    background-color: rgba(255, 89, 89, 1);
-    border: 5px solid black;
+.donation-amount .highlight-amount{
+    
+   background-color: rgba(255, 89, 89, 1);
+   color: white;
 }
+/* .donate-input{
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+} */
+ .donate-input{
+    flex-direction: column;
+    text-align: center;
+ }
+ 
+ .donate-input input {
+    margin-left: 70px;
+    width: 50%;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
 
 
 /*RESPONSIVE*/
@@ -126,12 +157,17 @@ header h1{
         
     }
     .donation-amount{
-    flex-wrap: wrap;
+    flex-direction: column; 
     justify-content: center;
-    gap: 1rem;
     margin: 0 auto;
     width: 50%;
+    gap: 0;
+    margin-bottom: 2rem;
 }
+    .donation-amount h3{
+        margin: 0;
+        margin-top: 15px;
+    }
 
     
 }
@@ -140,6 +176,12 @@ header h1{
 @media screen and (min-width: 576px) and (max-width: 860px){
     .donation-amount{
     flex-direction: column; 
+       gap: 0;
+       margin-bottom: 2rem;
 }
+ .donation-amount h3{
+        margin: 0;
+        margin-top: 15px;
+    }
 
 }
