@@ -163,6 +163,47 @@ display: flex;
 }
 
 
+/*GET UPDATES*/
+.get_updates{
+    text-align: center;
+}
+.form{
+    background-color: rgb(255,244,214);
+    height: 200px;
+    width: 60%;
+    padding-top: 3rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+    
+
+}
+ .subscribe-form {
+      display: flex;
+      margin: 50px auto;
+      width: 40%;  
+     
+    }
+
+    .subscribe-form input[type="email"] {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px 0 0 6px;
+       border: none;
+      
+    }
+
+    .subscribe-form button {
+      padding: 10px;
+      font-size: 16px;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 0px 6px 6px 0px;
+    }
+
+    
+
 
 
 
@@ -223,12 +264,22 @@ display: flex;
     #reverse_contribution{
         flex-direction: column-reverse;
     }
+    .form{
+        width: 80%;
+        padding-top: 1rem;
+    }
+
+    .subscribe-form{
+        flex-direction: column;
+        gap: 20px;
+        width: 90%;
+    }
 
     
 }
 
 
-@media screen and (min-width: 576px) and (max-width: 860px){
+@media screen and (min-width: 576px) and (max-width: 1040px){
     .donation-amount{
     flex-direction: column; 
        gap: 0;
