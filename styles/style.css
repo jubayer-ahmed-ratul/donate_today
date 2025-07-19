@@ -125,6 +125,30 @@ display: flex;
     font-size: 16px;
 }
 
+/*DONATE PLAN*/
+.donate-details{
+    text-align: center;
+}
+
+
+.boxes{
+    display: flex;
+    justify-content: space-between; 
+}
+.box{
+
+    width: 25%;
+    padding: 63px 23px;
+    border-radius: 10px;
+}
+.box img{
+    width: 53px;
+    height: 53px;
+    margin-bottom: 1rem;
+}
+.box-description{
+    margin-top: 1rem;
+}
 
 
 
@@ -168,6 +192,14 @@ display: flex;
         margin: 0;
         margin-top: 15px;
     }
+    .boxes{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .box{
+        width: 70%;
+        margin: 1.5rem auto;
+    }
 
     
 }
@@ -183,5 +215,14 @@ display: flex;
         margin: 0;
         margin-top: 15px;
     }
+    .boxes{
+        flex-wrap: wrap;
+    }
+    .box{
+        width: 40%;
+        margin:  auto;
+        margin-top: 2rem;
+    }
+    
 
 }
